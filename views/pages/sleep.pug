@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+  head
+    title= title
+    link(rel="stylesheet" type="text/css" href="/styles.css")
+    link(rel="stylesheet" type="text/css" href="/form8.css")
+
+  body
+    include ../partials/_header
+    
+    if todayLogged
+        include ../partials/_stats
+    else
+        include ../partials/_unloggedform
+
+    include ../partials/_footer
+
+
+
+        
