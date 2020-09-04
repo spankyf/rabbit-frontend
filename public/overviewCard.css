@@ -63,7 +63,7 @@ address {
   margin: 0 0 1.5em;
 }
 
-pre {
+/* pre {
   background: #eee;
   font-family: "Courier 10 Pitch", Courier, monospace;
   font-size: 15px;
@@ -73,7 +73,7 @@ pre {
   max-width: 100%;
   overflow: auto;
   padding: 1.6em;
-}
+} */
 
 code,
 kbd,
@@ -135,7 +135,7 @@ big {
 .card__img {
   display: block;
   border: 0;
-  width: 100%;
+  width: 80%;
   height: auto;
 }
 
