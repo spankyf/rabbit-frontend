@@ -1,22 +1,50 @@
 h1= something
     p This is the habit rabbit website. You can track your habits, update them daily and view your progress towards your goals!
-    .habit__container
-      
-      each val in data
-        ul.habit__card
-          li.card__li #{val.modelName} and the metric is #{val.targetColumn}
-          if val.passing
-            li.card__li.card__passing Well Done! You're achieving your goal!
-          else  
-            li.card__li.card__failing You can do better... one day at a time!
+    main.main-area
+      .centered
+        section.cards
+          article.card
+            a(href='#')
+              picture.thumbnail
+                img.card__img(src='http://www.abbeyjfitzgerald.com/wp-content/uploads/2017/02/image-example-01.jpg' alt='A banana that looks like a bird')
+              .card-content
+                h2 Vacation Image 01
+                p
+                  | TUX re-inventing the wheel, and move the needle. Feature creep dogpile that but diversify kpis but market-facing.
+              // .card-content
+          // .card
+          article.card
+            a(href='#')
+              picture.thumbnail
+                img.card__img(src='http://www.abbeyjfitzgerald.com/wp-content/uploads/2017/02/image-example-02.jpg' alt='Norwegian boller')
+              .card-content
+                h2 Vacation Image 02
+                p
+                  | Staff engagement synergize productive mindfulness and waste of resources cross sabers, or forcing function shotgun approach drink the Kool-aid.
+                p
+                  | Execute are we in agreeance what do you feel you would bring to the table if you were hired for this position, nor closer to the metal goalposts, are there any leftovers in the kitchen?.
+              // .card-content
+          // .card
+          article.card
+            a(href='#')
+              picture.thumbnail
+                img.card__img(src='http://www.abbeyjfitzgerald.com/wp-content/uploads/2017/02/image-example-03.jpg' alt='A dinosaur wearing an aluminium jacket')
+              .card-content
+                h2 Vacation Image 03
+                p
+                  | Viral engagement anti-pattern back of the net, for meeting assassin horsehead offer. Loop back design thinking drop-dead date.
+              // .card-content
+          // .card
+          article.card
+            a(href='#')
+              picture.thumbnail
+                img.card__img(src='http://www.abbeyjfitzgerald.com/wp-content/uploads/2017/02/image-example-04.jpg' alt='Chocolate filled boller')
+              .card-content
+                h2 Vacation Image 04
+                p
+                  | We need a paradigm shift get all your ducks in a row. I just wanted to give you a heads-up we need distributors to evangelize the new line to local markets when does this sunset? so waste of resources, yet fire up your browser, or touch base closing these latest prospects is like putting socks on an octopus.
+              // .card-content
+          // .card
+        // .cards
+      // .centered
 
-
-          if !val.today
-            li.card__li
-              if val.frequency == 'day'
-                a.flashit(href= val.href) Click here to log daily #{val.modelName.toLowerCase()} 
-              else  
-                a(href= val.href) Click here to log or review any #{val.modelName.toLowerCase()} data!
-          else
-            li.card__li
-              a(href= val.href) Click here to review your #{val.modelName.toLowerCase()} data!
